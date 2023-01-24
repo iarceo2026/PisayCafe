@@ -1,0 +1,56 @@
+body {
+    margin-top: 90px;
+
+    background-color: rgb(255, 226, 183);
+
+    background-size: cover;
+    background-image: url();
+    background-attachment: fixed;
+}
+
+.bg-navbar {
+    background-color: rgb(139, 92, 16);
+}
+
+ .navbar-brand {
+    font-family: sans-serif;
+}
+
+button {
+    background-color: #c67f1b;
+    border-radius: 10px;
+}
+
+.card {
+    border: none;
+    background-color: #ffffffee;
+}
+
+a {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+}
+
+li a::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 4px;
+    background-color: #ffffff;
+    bottom: 4px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+a div:hover {
+    transform: scale(1.01);
+    transition: 200ms ease-in;
+}
